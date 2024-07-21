@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Testimonials</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="testimonial-carousel section-padding owl-carousel">
+            <div class="single-testi">
+                <div class="img-area">
+                    <img src="hemanandini.jpg" alt="Devisrinivas">
+                </div>
+                <div class="img-text">
+                    <h2>D.Hemanandini</h2>
+                    <h3>WIE Chairperson [2023]</h3>
+                    <hr>
+                    <p>Developed strong teamwork & communication skills with WIE, the only girls' society. Join to learn event planning and stay updated on tech trends!</p>
+                </div>
+            </div>
+
+            <div class="single-testi">
+                <div class="img-area">
+                    <img src="yogish.jpg" alt="Yogish">
+                </div>
+                <div class="img-text">
+                    <h2>Yogish</h2>
+                    <h3>Newsletter Team Lead [2023]</h3>
+                    <hr>
+                    <p>IEEE taught teamwork, communication, and provided networking, practical exposure, and industry insights.</p>
+                </div>
+            </div>
+            <div class="single-testi">
+                <div class="img-area">
+                    <img src="SaiKiran.jpg" alt="K. Saikiran">
+                </div>
+                <div class="img-text">
+                    <h2>K. Saikiran</h2>
+                    <h3>Vice Chairperson [2022]</h3>
+                    <hr>
+                    <p>IEEE SB NBKRIST provided a platform for me to explore and develop both my technical and non-technical skills thoroughly.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Include jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Include Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Owl Carousel Initialization Script -->
+    <script>
+        $(document).ready(function(){
+            $('.testimonial-carousel').owlCarousel({
+                loop: true,         
+                margin: 20,          
+                autoplay: true,      
+                dots: true,          
+                responsive: {        
+                    0: {
+                        items: 1      
+                    },
+                    600: {
+                        items: 2      
+                    },
+                    1000: {
+                        items: 3      
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
